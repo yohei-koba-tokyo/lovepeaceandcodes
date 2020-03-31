@@ -1,0 +1,72 @@
+
+
+.center {
+  margin: 0 auto;
+  position: relative;
+  right: 201.5px;
+  top: 281px;
+	width: 10px;
+	height: 10px;
+	background: black;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+  -moz-animation-name: drip;
+  -webkit-animation-name: drip;
+  animation-name: drip;
+  -moz-animation-timing-function: cubic-bezier(1,0,.91,.40);
+  -webkit-animation-timing-function: cubic-bezier(1,0,.91,.30);
+  animation-timing-function: cubic-bezier(1,0,.91,19);
+  -moz-animation-duration: 15s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.center:before {
+  content: "";
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 15px solid black;
+  top: -11px;
+}
+
+@keyframes ripple {
+    from {
+      opacity: 1;
+    }
+    to {
+      width: 600px;
+      height: 300px;
+      border-width: 1px;
+      top: -100px;
+      opacity: 0;
+    }
+}
+
+@keyframes ripple-2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  100% {
+    width: 200px;
+    height: 100px;
+    border-width: 1px;
+    top: 100px;
+    left: 200px;
+  }
+}
+
+@keyframes drip {
+    to {
+      top: 1000px;
+    }
+}
