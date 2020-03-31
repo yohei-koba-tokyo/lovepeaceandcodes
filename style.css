@@ -1,6 +1,12 @@
 body {
   font-size: 14px;
-  color: #333;
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+  color: black;
   margin: 0 auto;
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 }
@@ -15,6 +21,10 @@ h1,h2,h3,h4,h5,h6,p {
 div {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 
 header {
   width: 100%;
@@ -22,7 +32,11 @@ header {
   background: url(noshadow.png) center center/600px auto no-repeat;
 }
 
-h3.author {
+h2.author {
   width: 100%;
   text-align: center;
+}
+
+.github-link {
+  background: none;
 }
