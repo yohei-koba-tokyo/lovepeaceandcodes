@@ -40,3 +40,7 @@ h2.author {
 p.small {
   font-size: small;
 }
+
+img#github {
+  padding-left: 40px;
+}
