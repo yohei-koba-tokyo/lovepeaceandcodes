@@ -27,6 +27,7 @@ html, .wrapper {
   right: 15px;
   top: 10px;
   text-align: right;
+  width: 120px;
 }
 button {
   background-color: transparent;
