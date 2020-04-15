@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <title>y.kobayashi's portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="drop.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script type="text/javascript" src="scroll.js"></script>
 </head>
 <body>  
+<div class="top-menu">
+  <button id="button1">profile</button>
+  <br>
+  <button id="button2">works</button>
+  <br>
+  <button id="button3">github</button>
+  <br>
+  <button id="button4">sounds</button>
+</div>
 <div class="wrapper">
-    
   <header><div class="center">・</p></header>
-
   <h2 class="author">
-    <br>
-    <br>
-    - yohei_kobayashi -
-    <br>
+    <div id="heading1">- yohei_kobayashi -</div>
     <br>
     <a href="https://twitter.com/legrobeats">twitter</a>
     /
@@ -24,24 +28,130 @@
     /
     <a href="https://www.facebook.com/yohei.kobayashi.167">facebook</a>
     <br>
-    <p class="small">Currentry based in Japan - Tokyo<p/>
-    <br> 
+    <p class="small">Currentry based in Japan - Tokyo</p>
+    <details>
+      <summary id="openclose1">
+        more profile
+      </summary>
+      <div class="box">
+        <div class="wrappin">
+          <img class="helloworld", src="helloworld.JPG">
+          <p class="inside">
+            小林 洋平 1982年生まれ
+            <br>
+            東京都市大学 工学部 情報システム工学科 卒
+            <br>
+            <br>
+            趣味でプログラミングを学習していたが、実際の
+            <br>
+            サービス構築にも携わりたいと思いたち、
+            <br>
+            サーバーサイドエンジニアとしての求職活動を
+            <br>
+            行っております。
+          </p>
+        </div>
+        <p class="inside">
+          <br>
+          <br>
+          　対応言語　　　 : HTML, HAML, CSS, SCSS, SQL, MySQL, Ruby
+          <br>
+          　フレームワーク : Rails, JQuery
+          <br>
+          　ツール　　　　 : GitHub, AWS(VPC, EC2, S3), RSpec, Sider
+          <br>
+          　学習中の技術　 : Docker, CircleCI, Javascript, Vue.js, Node.js,
+          <br>
+          <br>
+          　過去の職務経歴 : 店舗マネジメント経験 … 15年
+          <br>
+          　　　　　　　　　うち小売販売店での店長経験 … 8年
+          <br>
+          　　　　　　　　　うち統括エリアマネージャー経験 … 約1年半
+          <br>
+          　　　　　　　　　DJ & 音楽制作 … 学生時代〜現在
+        </p>
+        <br>
+        <p class="center">
+          もしご興味を持って頂けましたら、twitterDM等で
+          <br>
+          ご連絡いただければ幸いです。
+          <br>
+          <a href="https://twitter.com/legrobeats">
+            <i class="fab fa-twitter"> ようへい_vs_MobyDock</i>
+          </a>
+        </p>
+      </div>
+    </details>
     <br>
     <br>
     <br>
-    - portfolio -
-    <br>
+    <div id="heading2">- works -</div>
     <br>
     <br>
     <a href="http://surprizegiftmaker.herokuapp.com/">
       <img src="supulogo.png", width="400">
-      <p class="small">March,2020</p>
+
     </a>
+    <details>
+      <summary id="openclose2">about (March,2020)</summary>
+      <div class="box">
+        サプライズ企画アプリ"supu"
+        <br>
+        <br>
+        URL:　<a href="http://surprizegiftmaker.herokuapp.com/">http://surprizegiftmaker.herokuapp.com/</a>
+        <br>
+        GitHubリポジトリ:　<a href="https://github.com/yohei-koba-tokyo/supu">https://github.com/yohei-koba-tokyo/supu</a>
+        <br>
+        <br>
+        デモ用ログインユーザー名： SUPU
+        <br>
+        メールアドレス： test@supu.com
+        <br>
+        ログインパスワード： abcdefg
+        <br>
+        <br>
+        　開発環境 : HAML, SCSS, SQL, MySQL, Ruby
+        <br>
+        　　　　　　Rails, JQuery, Javascript
+        <br>
+        　　　　　　Heroku, RSpec, Sider, Rubocop, VSCode
+        <br>
+        <br>
+        　主な機能: ユーザーが知人へのサプライズを企画/管理出来るアプリ
+        <br>
+        　　　　　・チャット機能(自動更新/非同期通信)
+        <br>
+        　　　　　・パスワードを忘れた場合の、再設定メール通知
+        <br>
+        　　　　　・直近スケジュールへの自動スクロール
+        <br>
+        　　　　　・他ユーザーのインクリメンタルサーチ
+        <br>
+        　　　　　・Rspecによる単体&統合テストの実装
+        <br>
+        　　　　　・RubocopとSiderによる自動コードレビュー
+        <br>
+        <br>
+        <br>
+        作成に至った経緯: <br><br>ギフトサプライズは人から貰うのはもちろん嬉しいですが、人にしてあげるのはそれ以上に楽しいものだと、私は考えます。<br>
+
+「きっと喜んでくれる」「どんなリアクションしてくれるかな」…などと、あれこれ考えているだけで、私は顔が自然とニヤけてしまいます。<br>
+
+ある時、私は忙しい日々を過ごしていくうちに「最近、周りにサプライズ出来ていないな…」と、感じることがありました。<br>
+
+また、お世話になっている上司や部下の人数が増えていくと共に、周りの一人ひとりの好きなものや価値観、誕生日や記念日など、それらに対する関心が薄れてきていることに気が付きました。<br>
+
+それに気付いてから、私はお世話になる人達と話したことや聞いたことを、忘れないようこまめにメモを取るようにしました。そうした習慣が出来た時、私の仕事は以前よりも順調に進むようになりました。<br>
+
+今回、このような「周りへ関心を持つというインプット」と「ギフトサプライズというアウトプット」を同時に管理出来るようなアプリケーションが作れないかと考え、作成に至りました。<br>
+      </div>
+    </details>
     <br>
     <br>
     <br>
     <br>
-    - github -
+    <div id="heading3">- github -</div>
     <br>
     <br>
     <a id="github" href="https://github.com/yohei-koba-tokyo" target="_blank">
@@ -53,7 +163,7 @@
     <br>
     <br>
     <br>
-    - sounds - 
+    <div id="heading4">- sounds -</div>
     <br>
     <br>
     <a href="https://www.mixcloud.com/yohei-kobayashi/">mixcloud</a>
@@ -61,14 +171,19 @@
     <a href="https://soundcloud.com/45beats/tracks">soundcloud</a>
     <br>
     <br>
-    <iframe width="400" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/96203806&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
-    <br>
-    <br>
-    <iframe width="400" height="400" src="https://www.mixcloud.com/widget/iframe/?feed=%2Fyohei-kobayashi%2Fstraight-mix-feb42017%2F" frameborder="0" ></iframe>
+        <iframe width="500" height="500" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/269554&color=%232c3227&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <br>
+        <br>
+        <iframe width="500" height="200" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fyohei-kobayashi%2Fstraight-mix-feb42017%2F" frameborder="0" ></iframe>
+        <br>
+        <iframe width="500" height="200" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fyohei-kobayashi%2Femwu-mix-11262016%2F" frameborder="0" ></iframe>
+    <footer>
+      <i class="far fa-copyright">yohei_kobayahshi 2020</i>
+    </footer>
   </h2>
 
-
 </div>
+
 </body>
 
 </html>
