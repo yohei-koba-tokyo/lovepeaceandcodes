@@ -55,10 +55,10 @@ const BUTTON_2  = document.getElementById( 'button2' );
 const BUTTON_3  = document.getElementById( 'button3' );
 const BUTTON_4  = document.getElementById( 'button4' ); 
 
-let HEADING_1 = document.getElementById( 'heading1' );
-let HEADING_2 = document.getElementById( 'heading2' );
-let HEADING_3 = document.getElementById( 'heading3' );
-let HEADING_4 = document.getElementById( 'heading4' );
+const HEADING_1 = document.getElementById( 'heading1' );
+const HEADING_2 = document.getElementById( 'heading2' );
+const HEADING_3 = document.getElementById( 'heading3' );
+const HEADING_4 = document.getElementById( 'heading4' );
 
 BUTTON_1.addEventListener( 'click', function() {
     SCROLLER.scrollByElement( HEADING_1 );
