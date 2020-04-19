@@ -1,4 +1,3 @@
-
 window.onload = function(){
   function Scroller( target, speed, interval) {
   const   _MAX_POSITION   = target.scrollHeight - target.clientHeight;
@@ -10,7 +9,6 @@ window.onload = function(){
       var BOX2 = document.getElementById( 'box2' );
       var height1 = BOX1.scrollHeight;
       var height2 = BOX2.scrollHeight;
-      console.log(height1);
       if ( position > (_MAX_POSITION + height1 + height2) ) position = (_MAX_POSITION + height1 + height2);
       const   DIRECTION   = position < currentPosition ? -1 : 1;
       const   MOVEMENT    = speed * DIRECTION;
@@ -53,23 +51,40 @@ window.onload = function(){
   const HEADING_3 = document.getElementById( 'heading3' );
   const HEADING_4 = document.getElementById( 'heading4' );
 
-  
+  window.addEventListener('scroll', ()=> {
+    if (HEADING_1.getBoundingClientRect().top > 200) {
+        BUTTON_0.classList.add("blackline");
+        BUTTON_1.classList.remove("blackline");
+    } else if (HEADING_2.getBoundingClientRect().top > 200) {
+        BUTTON_1.classList.add("blackline");
+        BUTTON_0.classList.remove("blackline");
+        BUTTON_2.classList.remove("blackline");
+    } else if (HEADING_3.getBoundingClientRect().top > 200) {
+        BUTTON_2.classList.add("blackline");
+        BUTTON_1.classList.remove("blackline");
+        BUTTON_3.classList.remove("blackline");
+    } else if (HEADING_4.getBoundingClientRect().top > 200) {
+        BUTTON_3.classList.add("blackline");
+        BUTTON_2.classList.remove("blackline");
+        BUTTON_4.classList.remove("blackline");
+    } else {
+        BUTTON_4.classList.add("blackline");
+        BUTTON_3.classList.remove("blackline");
+    };
+  });
+
   BUTTON_0.addEventListener( 'click', function() {
       SCROLLER.scrollByElement( HEADING_0 );
   }); 
-
   BUTTON_1.addEventListener( 'click', function() {
       SCROLLER.scrollByElement( HEADING_1 );
   } );
-
   BUTTON_2.addEventListener( 'click', function() {
       SCROLLER.scrollByElement( HEADING_2 );
   } );
-
   BUTTON_3.addEventListener( 'click', function() {
       SCROLLER.scrollByElement( HEADING_3 );
   } );
-
   BUTTON_4.addEventListener( 'click', function() {
       SCROLLER.scrollByElement( HEADING_4 );
   } );
