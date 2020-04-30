@@ -55,20 +55,32 @@ window.onload = function(){
     if (HEADING_1.getBoundingClientRect().top > 200) {
         BUTTON_0.classList.add("blackline");
         BUTTON_1.classList.remove("blackline");
+        BUTTON_2.classList.remove("blackline");
+        BUTTON_3.classList.remove("blackline");
+        BUTTON_4.classList.remove("blackline");
     } else if (HEADING_2.getBoundingClientRect().top > 200) {
         BUTTON_1.classList.add("blackline");
         BUTTON_0.classList.remove("blackline");
         BUTTON_2.classList.remove("blackline");
+        BUTTON_3.classList.remove("blackline");
+        BUTTON_4.classList.remove("blackline");
     } else if (HEADING_3.getBoundingClientRect().top > 200) {
         BUTTON_2.classList.add("blackline");
+        BUTTON_0.classList.remove("blackline");
         BUTTON_1.classList.remove("blackline");
         BUTTON_3.classList.remove("blackline");
+        BUTTON_4.classList.remove("blackline");
     } else if (HEADING_4.getBoundingClientRect().top > 200) {
         BUTTON_3.classList.add("blackline");
+        BUTTON_0.classList.remove("blackline");
+        BUTTON_1.classList.remove("blackline");
         BUTTON_2.classList.remove("blackline");
         BUTTON_4.classList.remove("blackline");
     } else {
         BUTTON_4.classList.add("blackline");
+        BUTTON_0.classList.remove("blackline");
+        BUTTON_1.classList.remove("blackline");
+        BUTTON_2.classList.remove("blackline");
         BUTTON_3.classList.remove("blackline");
     };
   });
